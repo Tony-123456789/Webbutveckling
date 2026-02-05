@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+
+header{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h3{
+    margin: 10px 0 0 0;
+}
+
+nav{
+    background: #555;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    background: #444;
+}
+
+p{
+    color: white;
+}
+
+nav a:hover{
+    background: rgb(0, 0, 150);
+    color: rgb(255, 255, 255);
+}
+
+nav a span{
+    margin-right: 8px;
+}
+
+main{
+    display: flex;
+    background-color: #993;
+}
+
+article, aside{
+    padding: 10px;
+}
+
+article{
+    flex: 2;
+    background: #eee;
+    background-color: black;
+}
+
+.ninja{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article span{
+    border: 1px solid rgb(0, 22, 189);
+    border-radius: 3px;
+    padding: 3px;
+}
+
+aside{
+    flex: 1;
+}
+
+footer{
+    display: flex;
+    background: #444;
+}
+
+section{
+    flex: 1;
+    color: #eee;
+    padding: 0 15px 0 15px;
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    margin-bottom: 0;
+}
+
+h4:hover{
+    color: blue;
+}
+
+section p{
+    font-size: 15px;
+    margin-top: 0;
+}
+
+aside div{
+    background-size: cover;
+    background-position: 100px;
+    padding: 120px 8px 8px 8px;
+}
+
+#archi{
+    background: url(images/arkham_asylum.jpg.jpg);
+    background-size: cover;
+}
+
+#batinfo{
+    background: url(images/batman.jpg.jpg);
+    background-size: cover;
+    margin: 10px 0 0 0;
+}
+
+div section{
+    background: rgba(0,0,0,.4);
+    padding: 4px 4px 4px 4px;
+    color: white;
+}
+
+h5{
+    margin: 0;
+}
+
+#div section p{
+    margin: 0;
+}

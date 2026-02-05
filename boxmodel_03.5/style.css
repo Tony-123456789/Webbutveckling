@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+
+header{
+    background: url(images/verkstad.jpg);
+    padding: 100px;
+    background-size: cover;
+}
+
+nav{
+    background-color: orange;
+}
+
+nav a{
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    background-color: orange;
+}
+
+nav a:hover{
+    background-color: black;
+    color: orange;
+}
+
+main{
+    padding: 20px;
+}
+
+h1{
+    font: 30px verdana;
+    font-weight: bold;
+    color: orange;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#motorsågar{
+    width: 50%;
+}
+
+footer{
+    background-color: orange;
+    color:black;
+    padding: 5px;
+}

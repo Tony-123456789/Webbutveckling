@@ -1,0 +1,77 @@
+body{
+    background-image: url(images/Wynton-Marsalis.jpg);
+    background-size: 100%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . bebop . ."
+    ". title title michael ."
+    "york . . . ."
+    ". sinne . session ."
+    "shakira . opera . ."
+    ;
+    margin: 0px 30px 0px 30px;
+}
+
+section{
+    background-color: palevioletred;
+    padding: 0px 20px 0px 20px;
+    margin: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1, h3, h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#lives{
+    grid-area: bebop;
+}
+
+#jazz{
+    grid-area: title;
+}
+
+span{
+    display: grid;
+}
+
+#lincoln{
+    padding-left: 100px;
+}
+
+#spring{
+    padding-left: 325px;
+}
+
+#white{
+    grid-area: michael;
+}
+
+#youth{
+    grid-area: york;
+}
+
+#eeg{
+    grid-area: sinne;
+}
+
+#night{
+    grid-area: session;
+}
+
+#audrey{
+    grid-area: shakira;
+}
+
+#city{
+    grid-area: opera;
+}

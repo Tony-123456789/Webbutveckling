@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body{
+    background: url(images/Fiber\ optic\ cable\ high\ speed\ internet\ access.jpg);
+    /* background-size: cover; */
+}
+
+p{
+    font-weight: bold;
+    font-style: italic;
+    font-family: Arial, Georgia, sans-serif;
+    color: red;
+}
+
+h2{
+    color: mediumspringgreen;
+    font-size: 40px;
+}
+
+a{
+    color: red;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: rgb(255, 0, 255);
+}
+
+article{
+    border: 3px solid blue;
+    display: flex;
+}
+
+section{
+    border: 4px solid red;
+    flex: 1;
+}
+
+#lagre{
+    flex: 2;
+}

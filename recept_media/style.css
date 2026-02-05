@@ -1,0 +1,22 @@
+#nastanklassiker{
+    margin: 0px;
+}
+
+footer{
+    margin-left: 175px;
+}
+
+@media (min-width: 700px){
+    main{
+        display: flex;
+        max-width: 750px;
+    }
+
+    section{
+        flex: 1;
+    }
+
+    footer{
+        margin-left: 250px;
+    }
+}

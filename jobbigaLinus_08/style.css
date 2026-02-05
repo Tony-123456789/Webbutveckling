@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(images/krampussy.jpg);
+    color: hotpink;
+}
+
+h2, p{
+    font-family: "Noto Sans KR", sans-serif;
+    background-color: white;
+    border: 5px dotted red;
+}
+
+img{
+    width: 100%;
+}

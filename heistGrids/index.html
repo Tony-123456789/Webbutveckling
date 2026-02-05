@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kupp filmer</title>
+</head>
+<style>
+    body{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr 0.5fr 1fr;
+        grid-template-areas:
+        "heat heat sus sus"
+        "man rififi rififi bankjob"
+        ;
+    }
+
+    section{
+            height: 50vh;
+            background-size: 100%;
+            background-size: cover;
+            margin: 2px;
+    }
+
+    p{
+        color: White;
+        font-size: 25px;
+        padding-left: 15px;
+    }
+
+    #varme{
+        grid-area: heat;
+        background-image: url(Images/heat.jpg);
+        background-size: cover;
+    }
+    #misstankta{
+        grid-area: sus;
+        background-image: url(Images/usualsuspects.jpg);
+        background-size: cover;
+    }
+    #inuti{
+        grid-area: man;
+        background-image: url(Images/insideman.jpg);
+        background-size: cover;
+    }
+    #brak{
+        grid-area: rififi;
+        background-image: url(Images/rififi.jpg);
+        background-size: cover;
+    }
+    #bankjobbet{
+        grid-area: bankjob;
+        background-image: url(Images/bankjob.jpg);
+        background-size: cover;
+    }
+    
+</style>
+<body>
+    <section id="varme">
+        <p>Värme</p>
+    </section>
+    <section id="misstankta">
+        <p>Dem vanligt misstänkta</p>
+    </section>
+    <section id="inuti">
+        <p>Inuti en man</p>
+    </section>
+    <section id="brak">
+        <p>Bråk</p>
+    </section>
+    <section id="bankjobbet">
+        <p>Bankjobbet</p>
+    </section>
+</body>
+</html>
