@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TONYFLIX - The Sopranos</title>
+    <link rel="stylesheet" href="sopranos.css">
+</head>
+<body>
+    <header>
+        <h1>TONYFLIX</h1>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+        
+            <div class="dropdown">
+                <button class="menu-toggle" aria-expanded="false">
+                    Genre <span class="arrow">▾</span>
+                </button>
+
+                <div class="menu">
+                    <a href="genreCrime/genreCrime.html">Crime</a>
+                    <a href="genreDrama/genreDrama.html">Drama</a>
+                    <a href="genreComedy/genreComedy.html">Comedy</a>
+                    <a href="genreThriller/genreThriller.html">Thriller</a>
+                </div>
+
+                <a href="../#">About</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-grid">
+
+        <section class="thumbnail">
+            <img src="../images/theSopThumb.jpg" alt="The Sopranos">
+        </section>
+
+        <section class="episodes">
+            <h3>Episodes</h3>
+            <div class="season-dropdown">
+                <button class="season-toggle">
+                    Season 01 <span class="arrow">▾</span>
+                </button>
+
+                <div class="season-menu">
+                    <a href="theSopranosS2/sopranosS2.html">Season 02</a>
+                    <a href="#">Season 03</a>
+                    <a href="#">Season 04</a>
+                    <a href="#">Season 05</a>
+                    <a href="#">Season 06</a>
+                </div>
+            </div>
+            <ul class="episodeList">
+                <li><a href="#">S1.E1: Pilot</a></li>
+                <li><a href="#">S1.E2: 46 Long</a></li>
+                <li><a href="#">S1.E3: Denial, Anger, Acceptance</a></li>
+                <li><a href="#">S1.E4: Meadowlands</a></li>
+                <li><a href="#">S1.E5: College</a></li>
+                <li><a href="#">S1.E6: Pax Soprana</a></li>
+                <li><a href="#">S1.E7: Down Neck</a></li>
+                <li><a href="#">S1.E8: The Legend of Tennessee Moltisanti</a></li>
+                <li><a href="#">S1.E9: Boca</a></li>
+                <li><a href="#">S1.E10: A Hit Is a Hit</a></li>
+                <li><a href="#">S1.E11: Nobody Knows Anything</a></li>
+                <li><a href="#">S1.E12: Isabella</a></li>
+                <li><a href="#">S1.E13: I Dream of Jeannie Cusamano</a></li>
+            </ul>
+        </section>
+    </div>
+    <section class="details">
+        <h2>The Sopranos</h2>
+        <p><strong><span class="subtitle">Genre</span>:</strong> Crime, Drama</p>
+        <p><strong><span class="subtitle">Release Year</span>:</strong> 1999-2007</p>
+        <p><strong><span class="subtitle">Rating</span>:</strong> <span id="star">★</span> 9.2/10</p>
+        <p><strong><span class="subtitle">Description</span>:</strong> The Sopranos is a critically acclaimed television series that follows the life of Tony Soprano, a New Jersey mob boss, as he tries to balance the demands of his crime family with those of his personal life. The show delves into themes of family, loyalty, and the psychological struggles of its characters.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Tonyflix</p>
+    </footer>
+
+    <script src="../menutoggle.js"></script>
+    <script src="seasontoggle.js"></script>
+</body>
+</html>

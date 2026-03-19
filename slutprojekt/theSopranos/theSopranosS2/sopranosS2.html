@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TONYFLIX - The Sopranos</title>
+    <link rel="stylesheet" href="sopranosS2.css">
+</head>
+<body>
+    <header>
+        <h1>TONYFLIX</h1>
+        <nav class="navbar">
+            <a href="../../index.html">Home</a>
+        
+            <div class="dropdown">
+                <button class="menu-toggle" aria-expanded="false">
+                    Genre <span class="arrow">▾</span>
+                </button>
+
+                <div class="menu">
+                    <a href="genreCrime/genreCrime.html">Crime</a>
+                    <a href="genreDrama/genreDrama.html">Drama</a>
+                    <a href="genreComedy/genreComedy.html">Comedy</a>
+                    <a href="genreThriller/genreThriller.html">Thriller</a>
+                </div>
+
+                <a href="../#">About</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="content-grid">
+
+        <section class="thumbnail">
+            <img src="../../images/theSopThumb.jpg" alt="The Sopranos">
+        </section>
+
+        <section class="episodes">
+            <h3>Episodes</h3>
+            <div class="season-dropdown">
+                <button class="season-toggle">
+                    Season 02 <span class="arrow">▾</span>
+                </button>
+
+                <div class="season-menu">
+                    <a href="../sopranos.html">Season 01</a>
+                    <a href="#">Season 03</a>
+                    <a href="#">Season 04</a>
+                    <a href="#">Season 05</a>
+                    <a href="#">Season 06</a>
+                </div>
+            </div>
+            <ul class="episodeList">
+                <li><a href="#">S2.E1: Guy Walks Into a Psychiatrist's Office</a></li>
+                <li><a href="#">S2.E2: Do Not Resuscitate</a></li>
+                <li><a href="#">S2.E3: Toodle-Fucking-Oo</a></li>
+                <li><a href="#">S2.E4: Commendatori</a></li>
+                <li><a href="#">S2.E5: Big Girls Don't Cry</a></li>
+                <li><a href="#">S2.E6: The Happy Wanderer</a></li>
+                <li><a href="#">S2.E7: D-Girl</a></li>
+                <li><a href="#">S2.E8: Full Leather Jacket</a></li>
+                <li><a href="#">S2.E9: From Where to Eternity</a></li>
+                <li><a href="#">S2.E10: Bust-Out</a></li>
+                <li><a href="#">S2.E11: House Arrest</a></li>
+                <li><a href="#">S2.E12: The Knight in White Satin Armor</a></li>
+                <li><a href="#">S2.E13: Funhouse</a></li>
+            </ul>
+        </section>
+    </div>
+    <section class="details">
+        <h2>The Sopranos</h2>
+        <p><strong><span class="subtitle">Genre</span>:</strong> Crime, Drama</p>
+        <p><strong><span class="subtitle">Release Year</span>:</strong> 1999-2007</p>
+        <p><strong><span class="subtitle">Rating</span>:</strong> <span id="star">★</span> 9.2/10</p>
+        <p><strong><span class="subtitle">Description</span>:</strong> The Sopranos is a critically acclaimed television series that follows the life of Tony Soprano, a New Jersey mob boss, as he tries to balance the demands of his crime family with those of his personal life. The show delves into themes of family, loyalty, and the psychological struggles of its characters.</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Tonyflix</p>
+    </footer>
+
+    <script src="../../menutoggle.js"></script>
+    <script src="../seasontoggle.js"></script>
+</body>
+</html>

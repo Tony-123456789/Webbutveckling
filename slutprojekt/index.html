@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<title>Tonyflix</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>TONYFLIX</h1>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+        
+            <div class="dropdown">
+                <button class="menu-toggle" aria-expanded="false">
+                    Genre <span class="arrow">▾</span>
+                </button>
+
+                <div class="menu">
+                    <a href="genreCrime/genreCrime.html">Crime</a>
+                    <a href="genreDrama/genreDrama.html">Drama</a>
+                    <a href="genreComedy/genreComedy.html">Comedy</a>
+                    <a href="genreThriller/genreThriller.html">Thriller</a>
+                </div>
+
+                <a href="#">About</a>
+
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>The James Gandolfini Collection</h2>
+        <p>A collection of all films and series featuring the iconic James Gandolfini</p>
+    </section>
+
+    <section class="movies">
+
+        <div class="movie">
+            <a href="trueRomance.html"><img src="images/trueRomance.jpg" alt="True Romance">
+                <h3>True Romance</h3>
+
+                <div class="rating">
+                    <p class="stars">★ <span class="rateNumber">7.9/10</span></p>
+                </div>
+            </a>
+        </div>
+
+        <div class="movie">
+            <a href="theSopranos/sopranos.html">
+                <img src="images/theSopranos.jpg" alt="The Sopranos">
+                <h3>The Sopranos</h3>
+
+                <div class="rating">
+                    <p class="stars">★ <span class="rateNumber">9.2/10</span></p>
+                </div>
+            </a>
+        </div>
+
+        <div class="movie">
+            <a href="enoughSaid.html">
+                <img src="images/enoughSaidTest2.png" alt="Tumbnail for">
+                <h3>Enough Said</h3>
+
+                <div class="rating">
+                    <p class="stars">★ <span class="rateNumber">7.0/10</span></p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Tonyflix</p>
+    </footer>
+
+<script src="menutoggle.js"></script>
+</body>
+</html>

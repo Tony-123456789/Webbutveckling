@@ -1,0 +1,155 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    margin: 0;
+}
+
+/* Header */
+header{
+    background-color: black;
+    padding: 15px;
+}
+
+header h1{
+    color: red;
+    margin: 0;
+}
+
+nav a{
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Menu */
+.navbar{
+  background: black;
+  padding: 15px;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.navbar a:hover{
+  color: red;
+  transform: scale(1.2);
+}
+
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+
+.menu-toggle{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    display: inline-block;
+    transition: transform 0.3s;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu-toggle:hover{
+  color: red;
+  transform: scale(1.2);
+}
+
+.menu{
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: rgb(47, 47, 47);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.menu a{
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.menu a:hover{
+  color: white;
+  background-color: red;
+  transform: scale(1.1);
+}
+
+.menu.active{
+  display: block;
+}
+
+/* Hero section */
+.hero{
+    text-align: center;
+    padding: 15px 40px 15px 40px;
+    background-color: #222;
+}
+
+/* Movie section */
+.movies{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.movie{
+    background-color: #222;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.movie:hover{
+    transform: scale(1.1);
+}
+
+.movie img{
+    width: 200px;
+}
+
+div a{
+    color: white;
+    text-decoration: none;
+}
+
+div a:hover{
+    color: red;
+}
+
+/* Rating stars */
+.rating{
+    color: white;
+}
+
+.rateNumber{
+    color: white;
+}
+
+.stars{
+    color: gold;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
