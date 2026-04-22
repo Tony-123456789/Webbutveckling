@@ -23,6 +23,7 @@ nav a{
     margin-right: 15px;
     text-decoration: none;
 }
+
 /* Don't show hamburger menu on desktop */
 .hamburger{
     display: none;

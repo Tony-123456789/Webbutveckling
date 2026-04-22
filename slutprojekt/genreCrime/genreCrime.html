@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>TONYFLIX - Crime</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h1>TONYFLIX</h1>
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+
+            <div class="dropdown">
+                <button class="menu-toggle">Genre ▾</button>
+
+                <div class="menu">
+                    <a href="../genreCrime/genreCrime.html">Crime</a>
+                    <a href="../genreDrama/genreDrama.html">Drama</a>
+                    <a href="../genreComedy/genreComedy.html">Comedy</a>
+                    <a href="../genreThriller/genreThriller.html">Thriller</a>
+                </div>
+            </div>
+
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Crime Movies & Series</h2>
+        <p>Explore crime stories featuring James Gandolfini, the actor of Tony Soprano.</p>
+    </section>
+
+    <section class="movies">
+
+        <a href="../theSopranos/sopranos.html" class="movie">
+            <img src="../images/theSopranos.jpg" alt="The Sopranos">
+            <h3>The Sopranos</h3>
+            <div class="rating">
+                <p class="stars">★ <span class="rateNumber">9.2/10</span></p>
+            </div>
+        </a>
+
+        <a href="../trueRomance.html" class="movie">
+            <img src="../images/trueRomance.jpg" alt="True Romance">
+            <h3>True Romance</h3>
+            <div class="rating">
+                <p class="stars">★ <span class="rateNumber">7.9/10</span></p>
+            </div>
+        </a>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Tonyflix</p>
+    </footer>
+
+    <script src="../menutoggle.js"></script>
 </body>
 </html>
