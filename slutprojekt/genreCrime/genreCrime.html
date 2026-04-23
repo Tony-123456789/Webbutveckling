@@ -11,20 +11,25 @@
     <header>
         <h1>TONYFLIX</h1>
         <nav class="navbar">
-            <a href="../index.html">Home</a>
 
-            <div class="dropdown">
-                <button class="menu-toggle">Genre ▾</button>
+            <button class="hamburger">☰</button>
 
-                <div class="menu">
-                    <a href="../genreCrime/genreCrime.html">Crime</a>
-                    <a href="../genreDrama/genreDrama.html">Drama</a>
-                    <a href="../genreComedy/genreComedy.html">Comedy</a>
-                    <a href="../genreThriller/genreThriller.html">Thriller</a>
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
+
+                <div class="dropdown">
+                    <button class="menu-toggle">Genre ▾</button>
+
+                    <div class="menu">
+                        <a href="../genreCrime/genreCrime.html">Crime</a>
+                        <a href="../genreDrama/genreDrama.html">Drama</a>
+                        <a href="../genreComedy/genreComedy.html">Comedy</a>
+                        <a href="../genreThriller/genreThriller.html">Thriller</a>
+                    </div>
                 </div>
-            </div>
+                <a href="#">About</a>
 
-            <a href="#">About</a>
+            </div>
         </nav>
     </header>
 
@@ -35,21 +40,25 @@
 
     <section class="movies">
 
-        <a href="../theSopranos/sopranos.html" class="movie">
-            <img src="../images/theSopranos.jpg" alt="The Sopranos">
-            <h3>The Sopranos</h3>
-            <div class="rating">
-                <p class="stars">★ <span class="rateNumber">9.2/10</span></p>
-            </div>
-        </a>
+        <div>
+            <a href="../theSopranos/sopranos.html" class="movie">
+                <img src="../images/theSopranos.jpg" alt="The Sopranos">
+                <h3>The Sopranos</h3>
+                <div class="rating">
+                    <p class="stars">★ <span class="rateNumber">9.2/10</span></p>
+                </div>
+            </a>
+        </div>
 
-        <a href="../trueRomance.html" class="movie">
-            <img src="../images/trueRomance.jpg" alt="True Romance">
-            <h3>True Romance</h3>
-            <div class="rating">
-                <p class="stars">★ <span class="rateNumber">7.9/10</span></p>
-            </div>
-        </a>
+        <div>
+            <a href="../trueRomance.html" class="movie">
+                <img src="../images/trueRomance.jpg" alt="True Romance">
+                <h3>True Romance</h3>
+                <div class="rating">
+                    <p class="stars">★ <span class="rateNumber">7.9/10</span></p>
+                </div>
+            </a>
+        </div>
 
     </section>
 
@@ -58,5 +67,6 @@
     </footer>
 
     <script src="../menutoggle.js"></script>
+    <script src="../mobileHamburger.js"></script>
 </body>
 </html>
