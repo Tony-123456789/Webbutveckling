@@ -94,26 +94,32 @@ nav a{
   display: block;
 }
 
+/* Grid for thumbnail + episodes */
+.content-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "thumb  ep"
+        "desc   ep";
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
 /* Thumbnail */
-img{
-  width: 900px;
+.thumbnail{
+  grid-area: thumb;
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0;
 }
-
-/* Grid for thumbnail + episodes */
-
-.content-grid{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 30px;
-  padding: 30px;
-  align-items: start;
+img{
+  width: 100%; 
+  height: auto;
 }
-
 .episodes{
+  grid-area: ep;
   padding: 15px;
 }
 
@@ -131,52 +137,73 @@ img{
   margin-bottom: 10px;
 }
 
+/* Description */
+.details{
+  grid-area: desc;
+  background-color: rgb(47, 47, 47);
+  padding: 20px;
+  border-radius: 5px;
+  /* margin-left: 31px;
+  margin-right: 606px;
+  margin-bottom: 20px; */
+}
+
+.subtitle{
+  color: red;
+  margin-top: 0;
+  padding-bottom: 5px;
+}
+
+#star{
+  color: gold;
+}
+
 /* Season dropdown */
 .season-dropdown{
-    position: relative;
-    display: inline-block;
-    margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .season-toggle{
-    background: #222;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    margin: 0 0 10px 0;
+  background: #222;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 0 0 10px 0;
 }
 
 .season-toggle:hover{
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
 
 .season-menu{
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    border-radius: 5px;
-    width: 120px;
-    background-color: black;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  border-radius: 5px;
+  width: 120px;
+  background-color: black;
 }
 
 .season-menu a{
-    display: block;
-    padding: 8px;
-    color: white;
-    text-decoration: none;
+  display: block;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
 }
 
 .season-menu a:hover{
-    background-color: #222;
+  background-color: #222;
 }
 
 .season-menu.active{
-    display: block;
+  display: block;
 }
 
 /* Ep. buttons + hover fx */
@@ -190,36 +217,94 @@ img{
   transition: transform 0.2s, background-color 0.2s;
 }
 
-
 .episodeList a:hover{
   background-color: #2a2a2a;
   color: red;
   transform: scale(1.05);
 }
 
-/* Description */
-.details{
-  background-color: rgb(47, 47, 47);
-  padding: 20px;
-  border-radius: 5px;
-  margin-left: 31px;
-  margin-right: 606px;
-  margin-bottom: 20px;
-}
 
-.subtitle{
-  color: red;
-  margin-top: 0;
-  padding-bottom: 5px;
-}
-
-#star{
-  color: gold;
-}
 
 /* Footer */
 footer{
   text-align: center;
   padding: 20px;
   background-color: black;
+}
+
+@media (max-width: 768px) {
+
+  /* --- Layout --- */
+  .content-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "thumb"
+      "desc"
+      "ep";
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .details,
+  .episodes {
+    padding: 15px;
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Typography */
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  .details h2 {
+    font-size: 18px;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .navbar a,
+  .menu-toggle {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  /* Disable hover scaling on touch devices */
+  .navbar a:hover,
+  .menu-toggle:hover,
+  .episodeList a:hover {
+    transform: none;
+  }
+
+  /* --- Dropdown menus --- */
+  .menu,
+  .season-menu {
+    position: static;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  /* --- Episodes --- */
+  .episodeList a {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  .episodes li {
+    margin-bottom: 8px;
+  }
 }
