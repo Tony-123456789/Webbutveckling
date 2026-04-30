@@ -111,12 +111,222 @@ nav a{
     background-color: #222;
 }
 
-/* Movie section */
+/* Movie section + grid */
 .movies{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+        "movie1  movie2  movie3  movie4  movie5"
+        "movie6  movie7  movie8  movie9  movie10"
+        "movie11 movie12 movie13 movie14 movie15"
+        "movie16 movie17 movie18 movie19 movie20"
+        "movie21 movie22 movie23 movie24 movie25"
+        "movie26 movie27 movie28 movie29 movie30"
+        "movie31 movie32 movie33 movie34 movie35"
+        "movie36 movie37 movie38 movie39 movie40"
+        "movie41 movie42 movie43 movie44 movie45"
+        "   .       .    movie46    .       ."
+    ;
+    align-items: center;
     gap: 20px;
     padding: 30px;
+}
+
+/* Movie grid items */
+#movie1{ 
+    grid-area: movie1;
+}
+
+#movie2{ 
+    grid-area: movie2;
+}
+
+#movie3{ 
+    grid-area: movie3;
+}
+
+#movie4{ 
+    grid-area: movie4;
+}
+
+#movie5{ 
+    grid-area: movie5;
+}
+
+#movie6{ 
+    grid-area: movie6;
+}
+
+#movie7{ 
+    grid-area: movie7;
+}
+
+#movie8{ 
+    grid-area: movie8;
+}
+
+#movie9{ 
+    grid-area: movie9;
+}
+
+#movie10{ 
+    grid-area: movie10;
+}
+
+#movie11{ 
+    grid-area: movie11;
+}
+
+#movie12{ 
+    grid-area: movie12;
+}
+
+#movie13{ 
+    grid-area: movie13;
+}
+
+#movie14{ 
+    grid-area: movie14;
+}
+
+#movie15{ 
+    grid-area: movie15;
+}
+
+#movie16{ 
+    grid-area: movie16;
+}
+
+#movie17{ 
+    grid-area: movie17;
+}
+
+#movie18{ 
+    grid-area: movie18;
+}
+
+#movie19{ 
+    grid-area: movie19;
+}
+
+#movie20{ 
+    grid-area: movie20;
+}
+
+#movie21{ 
+    grid-area: movie21;
+}
+
+#movie22{ 
+    grid-area: movie22;
+}
+
+#movie23{ 
+    grid-area: movie23;
+}
+
+#movie24{ 
+    grid-area: movie24;
+}
+
+#movie25{ 
+    grid-area: movie25;
+}
+
+#movie26{ 
+    grid-area: movie26;
+}
+
+#movie27{ 
+    grid-area: movie27;
+}
+
+#movie28{ 
+    grid-area: movie28;
+}
+
+#movie29{ 
+    grid-area: movie29;
+}
+
+#movie30{ 
+    grid-area: movie30;
+}
+
+#movie31{ 
+    grid-area: movie31;
+}
+
+#movie32{ 
+    grid-area: movie32;
+}
+
+#movie33{ 
+    grid-area: movie33;
+}
+
+#movie34{ 
+    grid-area: movie34;
+}
+
+#movie35{ 
+    grid-area: movie35;
+}
+
+#movie36{ 
+    grid-area: movie36;
+}
+
+#movie37{ 
+    grid-area: movie37;
+}
+
+#movie38{ 
+    grid-area: movie38;
+}
+
+#movie39{ 
+    grid-area: movie39;
+}
+
+#movie40{ 
+    grid-area: movie40;
+}
+
+#movie41{ 
+    grid-area: movie41;
+}
+
+#movie42{ 
+    grid-area: movie42;
+}
+
+#movie43{ 
+    grid-area: movie43;
+}
+
+#movie44{ 
+    grid-area: movie44;
+}
+
+#movie45{ 
+    grid-area: movie45;
+}
+
+#movie46{ 
+    grid-area: movie46;
+}
+
+#movie47{ 
+    grid-area: movie47;
+}
+
+#movie48{ 
+    grid-area: movie48;
+}
+
+#movie49{ 
+    grid-area: movie49;
 }
 
 .movie{
