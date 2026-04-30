@@ -163,6 +163,7 @@ img{
   position: relative;
   display: inline-block;
   margin-top: 10px;
+  z-index: 22000;
 }
 
 .season-toggle{
