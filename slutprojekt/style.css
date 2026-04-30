@@ -104,8 +104,8 @@ nav a{
     display: block;
 }
 
-/* Hero section */
-.hero{
+/* Page intro section */
+.page-intro{
     text-align: center;
     padding: 15px 40px 15px 40px;
     background-color: #222;
@@ -317,18 +317,6 @@ nav a{
     grid-area: movie46;
 }
 
-#movie47{ 
-    grid-area: movie47;
-}
-
-#movie48{ 
-    grid-area: movie48;
-}
-
-#movie49{ 
-    grid-area: movie49;
-}
-
 .movie{
     background-color: #222;
     padding: 10px;
@@ -338,7 +326,7 @@ nav a{
 }
 
 .movie:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .movie img{
@@ -411,12 +399,12 @@ footer{
         margin: 10px 0;
     }
 
-    /* Hero */
-    .hero{
+    /* Page intro */
+    .page-intro{
         padding: 20px;
     }
 
-    .hero h2{
+    .page-intro h2{
         font-size: 20px;
     }
 
